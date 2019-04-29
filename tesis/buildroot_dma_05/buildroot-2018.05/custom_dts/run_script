@@ -1,0 +1,1 @@
+../output/build/linux-4.16/scripts/dtc/dtc -O dtb -o ./devicetree.dtb zynq-zed.dts

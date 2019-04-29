@@ -1,0 +1,5 @@
+config BR2_PACKAGE_DMAPROXY
+        bool "dmaproxy"
+        depends on BR2_LINUX_KERNEL
+        help
+                Linux Kernel Module Cheat.
