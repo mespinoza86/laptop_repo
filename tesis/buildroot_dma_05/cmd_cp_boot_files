@@ -1,0 +1,28 @@
+sudo mount /dev/sdc1 /mnt/boot/
+sudo mount /dev/sdc2 /mnt/root/
+sudo rm -rf /mnt/boot/*
+sudo rm -rf /mnt/boot/boot.bin
+sudo rm -rf /mnt/boot/u-boot.img
+sudo rm -rf /mnt/boot/uImage
+sudo rm -rf /mnt/boot/zynq-zed.dtb
+sudo rm -rf /mnt/boot/uramdisk.image.gz
+sudo rm -rf /mnt/boot/uEnv.txt
+sudo rm -rf /mnt/boot/design_1_wrapper.bit
+sudo rm -rf /mnt/boot/devicetree.dtb
+sudo rm -rf /mnt/boot/bitstream.bit
+sudo rm -rf /mnt/root/*
+sudo cp output/images/boot.bin /mnt/boot/boot.bin
+sudo cp output/images/u-boot.img /mnt/boot/
+###sudo cp output/images/bitstream.bit /mnt/boot
+sudo cp output/images/uImage /mnt/boot/
+sudo cp output/images/zynq-zed.dtb /mnt/boot/
+sudo cp output/images/devicetree.dtb /mnt/boot/
+sudo cp output/images/rootfs.cpio.uboot /mnt/boot/uramdisk.image.gz
+sudo cp output/images/uEnv.txt /mnt/boot
+sudo tar x -C /mnt/root/ -f output/images/rootfs.tar
+sudo cp devicetree.dtb /mnt/boot
+sudo cp devicetree.dtb /mnt/boot/zynq-zed.dtb
+sudo rm -rf /mnt/boot/boot.bin
+sudo cp BOOT.bin /mnt/boot
+sudo umount /mnt/boot/
+sudo umount /mnt/root/

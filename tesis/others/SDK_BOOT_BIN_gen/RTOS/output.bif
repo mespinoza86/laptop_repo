@@ -1,0 +1,8 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/marco/Documents/tutorials/freeRTOS/youtube_Trinning/FSBL/Debug/FSBL.elf
+	/home/marco/Documents/tesis/others/SDK_BOOT_BIN_gen/design_1_wrapper.bit
+	/home/marco/Documents/tesis/others/SDK_BOOT_BIN_gen/u-boot.elf
+	/home/marco/Documents/tutorials/freeRTOS/FreeRTOS_BSP_Test/Debug/FreeRTOS_BSP_Test.elf
+}

@@ -1,0 +1,4 @@
+config BR2_PACKAGE_DMAPROXYTESTMPI
+	bool "dmaproxytestmpi"
+	help
+		hello world mpi package

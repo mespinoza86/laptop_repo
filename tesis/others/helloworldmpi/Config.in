@@ -1,0 +1,4 @@
+config BR2_PACKAGE_HELLOWORLDMPI
+	bool "helloworldmpi"
+	help
+		hello world mpi package

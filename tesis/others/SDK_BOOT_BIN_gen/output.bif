@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/marco/Documents/tesis/buildroot_2018_05/buildroot_5_dma/BOOT_BIN_ADDERDEV/FSBL/Debug/FSBL.elf
+	/home/marco/Documents/tesis/buildroot_2018_05/buildroot_5_dma/SDK_BOOT_BIN_gen/design_1_wrapper.bit
+	/home/marco/Documents/tesis/buildroot_2018_05/buildroot_5_dma/SDK_BOOT_BIN_gen/u-boot.elf
+}
